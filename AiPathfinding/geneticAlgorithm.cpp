@@ -40,7 +40,7 @@ void geneticAlgorithm::selection()
 	parents.push_back(population[1]);
 }
 
-void geneticAlgorithm::crossover()
+void geneticAlgorithm::crossover()//randomly select genes and fills the population with a set of the best genes
 {
 	for (int i = 0; i < population.size(); i++)
 	{
@@ -49,7 +49,7 @@ void geneticAlgorithm::crossover()
 			int temp = dist(parents.size() - 1);
 			population[i].first[j] = parents[temp].first[j];
 
-			if (dist(1000) < mutateRate)
+			if (dist(1000) < mutateRate)//mutate
 			{
 				std::string temp;
 				temp.push_back(dist(1) + '0');
