@@ -1,0 +1,3 @@
+open the exe folder, run the aipathfinder.exe and select one of the two maps in the maps folder
+
+the program will then run an gene based ai to find the shortest path to the goal displayed in yellow
